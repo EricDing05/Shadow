@@ -22,12 +22,13 @@ def move_servo(angle):
 
 try: 
 # example to move servo to 0,90, and 180 degrees
-    move.servo(0)
+    move_servo(0)
     time.sleep(1)
-    move.servo(90)
+    move_servo(90)
     time.sleep(1)
-    move.servo(180)
+    move_servo(180)
     time.sleep(1)
+    
 
 finally: 
     pwm.stop()
